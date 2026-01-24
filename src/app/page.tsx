@@ -63,7 +63,7 @@ export default function Home() {
           description="Core marks crafted for retailers and founders—balanced forms that stay crisp across print and digital."
           items={logoGallery}
           bookMessage="Hi! I'm interested in getting a logo designed by GF Digital Studio."
-          columnsConfig={{ mobile: 1, tablet: 2, desktop: 3 }}
+          columnsConfig={{ mobile: 3, tablet: 3, desktop: 3 }}
         />
 
         {/* New section between logos and posters */}
@@ -76,7 +76,7 @@ export default function Home() {
           description="Impactful layouts ready for social drops, storefront displays, and quick-turn launches."
           items={posterGallery}
           bookMessage="Hi! I'm interested in getting a professional poster or campaign design from GF Digital Studio."
-          columnsConfig={{ mobile: 1, tablet: 1, desktop: 2 }}
+          columnsConfig={{ mobile: 2, tablet: 2, desktop: 2 }}
         />
 
         {/* Contact form section before footer */}
