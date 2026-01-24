@@ -32,12 +32,6 @@ export function HeroSection() {
 
       <div className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
         <div className="space-y-8">
-          <div className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white">
-            {heroProfile.studio}
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-            {heroProfile.business}
-          </div>
-
           <div className="space-y-4">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200/80">
               {heroProfile.location}
