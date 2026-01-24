@@ -17,7 +17,15 @@ type MasonryGalleryProps = {
 };
 
 export function MasonryGallery({ id, title, eyebrow, description, items, bookMessage, columnsConfig = { mobile: 1, tablet: 2, desktop: 3 } }: MasonryGalleryProps) {
-  const [columns, setColumns] = useState(columnsConfig.mobile);
+  const [columns, setColumns] = useState(() => {
+    if (typeof window === 'undefined') return columnsConfig.mobile;
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+      return columnsConfig.desktop;
+    } else if (window.matchMedia('(min-width: 640px)').matches) {
+      return columnsConfig.tablet;
+    }
+    return columnsConfig.mobile;
+  });
   
   useEffect(() => {
     const handleResize = () => {
@@ -33,7 +41,7 @@ export function MasonryGallery({ id, title, eyebrow, description, items, bookMes
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, [columnsConfig]);
+  }, [columnsConfig.mobile, columnsConfig.tablet, columnsConfig.desktop]);
 
   const whatsappUrl = bookMessage
     ? `https://wa.me/50939934388?text=${encodeURIComponent(bookMessage)}`
