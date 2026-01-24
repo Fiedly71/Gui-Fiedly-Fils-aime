@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/images/GD.jpg",
     shortcut: "/images/GD.jpg",
+    apple: "/images/GD.jpg",
   },
   openGraph: {
     title: "Gui Fiedly Fils-aime | GF Digital Studio",
