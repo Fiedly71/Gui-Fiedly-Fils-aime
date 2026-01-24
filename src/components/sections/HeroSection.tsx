@@ -33,9 +33,6 @@ export function HeroSection() {
       <div className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
         <div className="space-y-8">
           <div className="space-y-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200/80">
-              {heroProfile.location}
-            </p>
             <div className="flex items-center gap-2 sm:gap-3">
               <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full border border-white/15 bg-white/10 shadow-lg shadow-cyan-500/10 md:hidden">
                 <Image
