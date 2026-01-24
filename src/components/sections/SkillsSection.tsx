@@ -19,12 +19,12 @@ export function SkillsSection() {
       </div>
 
       <div className="overflow-x-auto rounded-2xl border border-white/5 bg-white/[0.02] p-4 sm:p-5">
-        <div className="flex gap-3 whitespace-nowrap sm:gap-2">
+        <div className="flex gap-2 whitespace-nowrap">
           {skillCategories.map((cat, i) => (
             <button
               key={cat.title}
               onClick={() => setActiveIndex(i)}
-              className={`relative flex-shrink-0 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.12em] transition ${
+              className={`relative flex-shrink-0 px-3 py-2 text-xs font-semibold uppercase tracking-[0.1em] transition ${
                 i === activeIndex
                   ? "text-white after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-cyan-400"
                   : "text-white/60 hover:text-white/90"

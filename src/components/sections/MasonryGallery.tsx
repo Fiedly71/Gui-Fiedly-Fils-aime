@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { GalleryItem } from "@/types/content";
 import { ArrowUpRight } from "lucide-react";
+import { useEffect, useState } from "react";
 
 type MasonryGalleryProps = {
   id: string;
@@ -14,28 +17,33 @@ type MasonryGalleryProps = {
 };
 
 export function MasonryGallery({ id, title, eyebrow, description, items, bookMessage, columnsConfig = { mobile: 1, tablet: 2, desktop: 3 } }: MasonryGalleryProps) {
+  const [columns, setColumns] = useState(columnsConfig.mobile);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.matchMedia('(min-width: 1024px)').matches) {
+        setColumns(columnsConfig.desktop);
+      } else if (window.matchMedia('(min-width: 640px)').matches) {
+        setColumns(columnsConfig.tablet);
+      } else {
+        setColumns(columnsConfig.mobile);
+      }
+    };
+    
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [columnsConfig]);
+
   const whatsappUrl = bookMessage
     ? `https://wa.me/50939934388?text=${encodeURIComponent(bookMessage)}`
     : "https://wa.me/50939934388";
   
-  const getColumnsClass = () => {
-    const mobileClass = 
-      columnsConfig.mobile === 2 ? 'columns-2' : 
-      columnsConfig.mobile === 3 ? 'columns-3' : 
-      'columns-1';
-    
-    const tabletClass = 
-      columnsConfig.tablet === 1 ? 'sm:columns-1' : 
-      columnsConfig.tablet === 3 ? 'sm:columns-3' : 
-      'sm:columns-2';
-    
-    const desktopClass = 
-      columnsConfig.desktop === 1 ? 'lg:columns-1' : 
-      columnsConfig.desktop === 2 ? 'lg:columns-2' : 
-      'lg:columns-3';
-    
-    return `${mobileClass} ${tabletClass} ${desktopClass}`;
-  };
+  const gridStyle = {
+    display: 'grid',
+    gridTemplateColumns: `repeat(${columns}, 1fr)`,
+    gap: '1rem',
+  } as React.CSSProperties;
   return (
     <section id={id} className="space-y-6 rounded-3xl border border-white/10 bg-slate-900/60 px-6 py-10 shadow-xl shadow-black/20 sm:px-10 sm:py-14">
       <div className="space-y-2">
@@ -46,11 +54,11 @@ export function MasonryGallery({ id, title, eyebrow, description, items, bookMes
         <p className="max-w-2xl text-base text-slate-200">{description}</p>
       </div>
 
-      <div className={`gap-4 ${getColumnsClass()}`}>
+      <div style={gridStyle}>
         {items.map((item) => (
           <div
             key={item.title}
-            className="mb-4 break-inside-avoid overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-black/20"
+            className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-black/20"
           >
             <div className="relative h-full w-full">
               <Image
