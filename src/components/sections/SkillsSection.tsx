@@ -18,20 +18,22 @@ export function SkillsSection() {
         <p className="max-w-2xl text-base text-slate-200">A clear view of my academic, technical, and entrepreneurial strengths.</p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-3 rounded-2xl border border-white/5 bg-white/[0.02] p-4 sm:gap-2 sm:p-5">
-        {skillCategories.map((cat, i) => (
-          <button
-            key={cat.title}
-            onClick={() => setActiveIndex(i)}
-            className={`relative px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.12em] transition ${
-              i === activeIndex
-                ? "text-white after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-cyan-400"
-                : "text-white/60 hover:text-white/90"
-            }`}
-          >
-            {cat.title}
-          </button>
-        ))}
+      <div className="overflow-x-auto rounded-2xl border border-white/5 bg-white/[0.02] p-4 sm:p-5">
+        <div className="flex gap-3 whitespace-nowrap sm:gap-2">
+          {skillCategories.map((cat, i) => (
+            <button
+              key={cat.title}
+              onClick={() => setActiveIndex(i)}
+              className={`relative flex-shrink-0 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.12em] transition ${
+                i === activeIndex
+                  ? "text-white after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-cyan-400"
+                  : "text-white/60 hover:text-white/90"
+              }`}
+            >
+              {cat.title}
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className="grid gap-3 sm:grid-cols-2">

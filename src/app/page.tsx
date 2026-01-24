@@ -7,8 +7,6 @@ import { Footer } from "@/components/sections/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { FloatingWhatsApp } from "@/components/layout/FloatingWhatsApp";
 import { logoGallery, posterGallery, webProjects } from "@/data/content";
-import Image from "next/image";
-import { MobileFeatureImage } from "@/components/sections/MobileFeatureImage";
 
 export default function Home() {
   return (
@@ -52,9 +50,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Mobile-only preview image placed lower in the section */}
-        <MobileFeatureImage src="/images/web.jpg" alt="Website preview" />
-
         {/* 3rd section: Live websites */}
         <WebProjects 
           projects={webProjects} 
@@ -68,6 +63,7 @@ export default function Home() {
           description="Core marks crafted for retailers and founders—balanced forms that stay crisp across print and digital."
           items={logoGallery}
           bookMessage="Hi! I'm interested in getting a logo designed by GF Digital Studio."
+          columnsConfig={{ mobile: 1, tablet: 2, desktop: 3 }}
         />
 
         {/* New section between logos and posters */}
@@ -80,6 +76,7 @@ export default function Home() {
           description="Impactful layouts ready for social drops, storefront displays, and quick-turn launches."
           items={posterGallery}
           bookMessage="Hi! I'm interested in getting a professional poster or campaign design from GF Digital Studio."
+          columnsConfig={{ mobile: 1, tablet: 1, desktop: 2 }}
         />
 
         {/* Contact form section before footer */}

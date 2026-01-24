@@ -10,12 +10,32 @@ type MasonryGalleryProps = {
   description: string;
   items: GalleryItem[];
   bookMessage?: string;
+  columnsConfig?: { mobile: number; tablet: number; desktop: number };
 };
 
-export function MasonryGallery({ id, title, eyebrow, description, items, bookMessage }: MasonryGalleryProps) {
+export function MasonryGallery({ id, title, eyebrow, description, items, bookMessage, columnsConfig = { mobile: 1, tablet: 2, desktop: 3 } }: MasonryGalleryProps) {
   const whatsappUrl = bookMessage
     ? `https://wa.me/50939934388?text=${encodeURIComponent(bookMessage)}`
     : "https://wa.me/50939934388";
+  
+  const getColumnsClass = () => {
+    const mobileClass = 
+      columnsConfig.mobile === 2 ? 'columns-2' : 
+      columnsConfig.mobile === 3 ? 'columns-3' : 
+      'columns-1';
+    
+    const tabletClass = 
+      columnsConfig.tablet === 1 ? 'sm:columns-1' : 
+      columnsConfig.tablet === 3 ? 'sm:columns-3' : 
+      'sm:columns-2';
+    
+    const desktopClass = 
+      columnsConfig.desktop === 1 ? 'lg:columns-1' : 
+      columnsConfig.desktop === 2 ? 'lg:columns-2' : 
+      'lg:columns-3';
+    
+    return `${mobileClass} ${tabletClass} ${desktopClass}`;
+  };
   return (
     <section id={id} className="space-y-6 rounded-3xl border border-white/10 bg-slate-900/60 px-6 py-10 shadow-xl shadow-black/20 sm:px-10 sm:py-14">
       <div className="space-y-2">
@@ -26,7 +46,7 @@ export function MasonryGallery({ id, title, eyebrow, description, items, bookMes
         <p className="max-w-2xl text-base text-slate-200">{description}</p>
       </div>
 
-      <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
+      <div className={`gap-4 ${getColumnsClass()}`}>
         {items.map((item) => (
           <div
             key={item.title}

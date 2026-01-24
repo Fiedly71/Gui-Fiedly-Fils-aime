@@ -42,20 +42,20 @@ export function HeroSection() {
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200/80">
               {heroProfile.location}
             </p>
-            <div className="flex items-center gap-3">
-              <h1 className="order-1 text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
-                {heroProfile.name}
-              </h1>
-              <div className="order-2 ml-3 relative h-20 w-20 overflow-hidden rounded-full border border-white/15 bg-white/10 shadow-lg shadow-cyan-500/10 md:hidden">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full border border-white/15 bg-white/10 shadow-lg shadow-cyan-500/10 md:hidden">
                 <Image
                   src="/images/Gui2.jpg"
                   alt={heroProfile.name}
                   fill
-                  sizes="80px"
+                  sizes="64px"
                   className="object-cover"
                   priority
                 />
               </div>
+              <h1 className="text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-6xl">
+                {heroProfile.name}
+              </h1>
             </div>
             <p className="text-lg text-slate-200 sm:text-xl">
               {heroProfile.tagline}
