@@ -44,8 +44,8 @@ export function MasonryGallery({ id, title, eyebrow, description, items, bookMes
   }, [columnsConfig.mobile, columnsConfig.tablet, columnsConfig.desktop]);
 
   const whatsappUrl = bookMessage
-    ? `https://wa.me/50939934388?text=${encodeURIComponent(bookMessage)}`
-    : "https://wa.me/50939934388";
+    ? `https://wa.me/50932836938?text=${encodeURIComponent(bookMessage)}`
+    : "https://wa.me/50932836938";
   
   const gridStyle = {
     display: 'grid',

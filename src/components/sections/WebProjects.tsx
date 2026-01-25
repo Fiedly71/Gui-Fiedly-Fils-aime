@@ -10,8 +10,8 @@ type WebProjectsProps = {
 
 export function WebProjects({ projects, bookMessage }: WebProjectsProps) {
   const whatsappUrl = bookMessage
-    ? `https://wa.me/50939934388?text=${encodeURIComponent(bookMessage)}`
-    : "https://wa.me/50939934388";
+    ? `https://wa.me/50932836938?text=${encodeURIComponent(bookMessage)}`
+    : "https://wa.me/50932836938";
   return (
     <section id="web" className="space-y-6 rounded-3xl border border-white/10 bg-slate-900/60 px-6 py-10 shadow-xl shadow-black/20 sm:px-10 sm:py-14">
       <div className="space-y-2">
