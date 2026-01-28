@@ -18,7 +18,9 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Gui Fiedly Fils-aime — Founder of GF Digital Studio and UP-TO-DATE Electronic & Shipping.",
   icons: {
-    icon: "/images/GD.jpg",
+    icon: [
+      { url: "/images/GD.jpg", type: "image/jpeg", sizes: "any" }
+    ],
     shortcut: "/images/GD.jpg",
     apple: "/images/GD.jpg",
   },
