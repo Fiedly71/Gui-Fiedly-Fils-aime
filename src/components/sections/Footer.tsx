@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram, Mail, Phone, ExternalLink } from "lucide-react";
+import { Instagram, Mail, Phone, ExternalLink, Linkedin } from "lucide-react";
 import { contact, heroProfile, webProjects } from "@/data/content";
 
 const paymentMethods = [
@@ -15,6 +15,11 @@ const footerLinks = [
   {
     title: "Connect",
     links: [
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/in/gui-fiedly-fils-aime-8aab203a8",
+        icon: Linkedin,
+      },
       { label: "Instagram", href: "https://instagram.com/uptodate.electronic", icon: Instagram },
       { label: "Linktree", href: "https://linktr.ee/UpToDateElectronicStore", icon: ExternalLink },
       { label: contact.email, href: `mailto:${contact.email}`, icon: Mail },
