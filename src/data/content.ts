@@ -49,14 +49,20 @@ export const webProjects: WebProject[] = [
   {
     title: "UP-TO-DATE Electronic",
     url: "https://uptodateelectronic.com",
-    image: "/images/uptodate%20web.jpg",
+    image: "/images/u.jpg",
     cta: "Visit site",
   },
   {
     title: "Sparkllex",
     url: "https://sparkllex.com",
-    image: "/images/sparkllex%20web.jpg",
+    image: "/images/n.jpg",
     cta: "See live",
+  },
+  {
+    title: "UpNext Growth",
+    url: "https://upnextgrwoth.com",
+    image: "/images/b.jpg",
+    cta: "View project",
   },
 ];
 
