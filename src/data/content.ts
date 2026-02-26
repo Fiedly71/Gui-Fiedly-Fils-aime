@@ -60,7 +60,7 @@ export const webProjects: WebProject[] = [
   },
   {
     title: "UpNext Growth",
-    url: "https://upnextgrwoth.com",
+    url: "https://upnextgrowth.vercel.app/",
     image: "/images/b.jpg",
     cta: "View project",
   },
@@ -74,6 +74,10 @@ export const socialLinks: SocialLink[] = [
   {
     label: "Instagram Personal",
     href: "https://instagram.com/gui.fiedly",
+  },
+  {
+    label: "Instagram GD Digital Studio",
+    href: "https://instagram.com/gd.digital.studio",
   },
   {
     label: "Linktree",

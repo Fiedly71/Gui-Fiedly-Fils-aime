@@ -30,20 +30,10 @@ export function HeroSection() {
         <div className="absolute -right-16 top-10 h-72 w-72 rounded-full bg-indigo-500/20 blur-3xl" />
       </div>
 
-      <div className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+      <div className="relative">
         <div className="space-y-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2 sm:gap-3">
-              <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full border border-white/15 bg-white/10 shadow-lg shadow-cyan-500/10 md:hidden">
-                <Image
-                  src="/images/Gui2.jpg"
-                  alt={heroProfile.name}
-                  fill
-                  sizes="64px"
-                  className="object-cover"
-                  priority
-                />
-              </div>
               <h1 className="text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-6xl">
                 {heroProfile.name}
               </h1>
@@ -106,6 +96,15 @@ export function HeroSection() {
               @gui.fiedly
             </Link>
             <Link
+              href="https://instagram.com/gd.digital.studio"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-pink-300/50 bg-pink-400/10 px-4 py-2 font-semibold tracking-[0.08em] text-pink-50 transition hover:border-pink-200 hover:bg-pink-400/20"
+            >
+              <Instagram size={18} />
+              @gd.digital.studio
+            </Link>
+            <Link
               href="https://linktr.ee/UpToDateElectronicStore"
               target="_blank"
               rel="noreferrer"
@@ -123,20 +122,6 @@ export function HeroSection() {
               <FiverrIcon className="h-4 w-4" />
               Fiverr
             </Link>
-          </div>
-        </div>
-
-        <div className="relative mx-auto hidden h-[240px] w-[240px] overflow-hidden rounded-full border border-white/15 bg-white/10 shadow-2xl shadow-cyan-500/10 ring-2 ring-white/10 sm:h-[300px] sm:w-[300px] md:block md:h-[420px] md:w-full md:max-w-[420px] md:rounded-3xl">
-          <Image
-            src={heroProfile.portrait}
-            alt={heroProfile.name}
-            fill
-            sizes="(min-width: 1024px) 420px, 90vw"
-            className="object-cover"
-            priority
-          />
-          <div className="absolute bottom-3 left-1/2 hidden -translate-x-1/2 rounded-full bg-black/60 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white md:bottom-4 md:left-4 md:inline-flex md:translate-x-0">
-            {heroProfile.name}
           </div>
         </div>
       </div>

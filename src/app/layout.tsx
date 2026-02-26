@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { PWAInstallPrompt } from "@/components/layout/PWAInstallPrompt";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,10 +14,24 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#0b1020",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export const metadata: Metadata = {
   title: "Gui Fiedly Fils-aime | GF Digital Studio",
   description:
     "Portfolio of Gui Fiedly Fils-aime — Founder of GF Digital Studio and UP-TO-DATE Electronic & Shipping.",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "GF Digital",
+  },
   icons: {
     icon: [
       { url: "/images/GD.jpg", type: "image/jpeg", sizes: "any" }
@@ -44,6 +59,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-950 text-slate-50 font-sans`}
       >
         {children}
+        <PWAInstallPrompt />
         <Analytics />
       </body>
     </html>

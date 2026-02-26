@@ -1,0 +1,27 @@
+{
+  "name": "Gui Fiedly Fils-aime | GF Digital Studio",
+  "short_name": "GF Digital",
+  "description": "Portfolio of Gui Fiedly Fils-aime — Founder of GF Digital Studio and UP-TO-DATE Electronic & Shipping.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#0b1020",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/GD.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/GD.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "portfolio", "design"],
+  "lang": "en",
+  "dir": "ltr"
+}
