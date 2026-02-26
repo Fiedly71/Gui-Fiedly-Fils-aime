@@ -1,10 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { GalleryItem } from "@/types/content";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ZoomIn } from "lucide-react";
 import { useEffect, useState } from "react";
+import { ImageLightbox } from "@/components/ui/ImageLightbox";
+import { SkeletonImage } from "@/components/ui/SkeletonImage";
 
 type MasonryGalleryProps = {
   id: string;
@@ -26,6 +27,24 @@ export function MasonryGallery({ id, title, eyebrow, description, items, bookMes
     }
     return columnsConfig.mobile;
   });
+  
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  const openLightbox = (index: number) => {
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
+  
+  const closeLightbox = () => setLightboxOpen(false);
+  
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % items.length);
+  };
+  
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + items.length) % items.length);
+  };
   
   useEffect(() => {
     const handleResize = () => {
@@ -63,25 +82,44 @@ export function MasonryGallery({ id, title, eyebrow, description, items, bookMes
       </div>
 
       <div style={gridStyle}>
-        {items.map((item) => (
-          <div
+        {items.map((item, index) => (
+          <button
             key={item.title}
-            className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-black/20"
+            onClick={() => openLightbox(index)}
+            className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-black/20 transition hover:border-cyan-300/30 hover:shadow-cyan-500/10"
           >
             <div className="relative h-full w-full">
-              <Image
+              <SkeletonImage
                 src={item.image}
                 alt={item.title}
                 width={900}
                 height={1100}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                skeletonClassName="rounded-2xl"
                 sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 95vw"
                 priority={id === "logos"}
               />
+              <div className="absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition duration-300 group-hover:bg-black/40 group-hover:opacity-100">
+                <div className="rounded-full bg-white/20 p-3 backdrop-blur-sm">
+                  <ZoomIn size={24} className="text-white" />
+                </div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
+                <p className="text-sm font-semibold text-white">{item.title}</p>
+              </div>
             </div>
-          </div>
+          </button>
         ))}
       </div>
+
+      <ImageLightbox
+        images={items}
+        currentIndex={currentImageIndex}
+        isOpen={lightboxOpen}
+        onClose={closeLightbox}
+        onNext={nextImage}
+        onPrev={prevImage}
+      />
 
       <div className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-300">…and more</div>
 

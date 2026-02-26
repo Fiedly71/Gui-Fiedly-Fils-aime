@@ -18,22 +18,26 @@ export function SkillsSection() {
         <p className="max-w-2xl text-base text-slate-200">A clear view of my academic, technical, and entrepreneurial strengths.</p>
       </div>
 
-      <div className="overflow-x-auto rounded-2xl border border-white/5 bg-white/[0.02] p-4 sm:p-5">
-        <div className="flex gap-2 whitespace-nowrap">
-          {skillCategories.map((cat, i) => (
-            <button
-              key={cat.title}
-              onClick={() => setActiveIndex(i)}
-              className={`relative flex-shrink-0 px-3 py-2 text-xs font-semibold uppercase tracking-[0.1em] transition ${
-                i === activeIndex
-                  ? "text-white after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-cyan-400"
-                  : "text-white/60 hover:text-white/90"
-              }`}
-            >
-              {cat.title}
-            </button>
-          ))}
+      <div className="relative">
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-slate-900/90 to-transparent sm:hidden" />
+        <div className="overflow-x-auto rounded-2xl border border-white/5 bg-white/[0.02] p-4 sm:p-5 scrollbar-hide">
+          <div className="flex gap-2 whitespace-nowrap">
+            {skillCategories.map((cat, i) => (
+              <button
+                key={cat.title}
+                onClick={() => setActiveIndex(i)}
+                className={`relative flex-shrink-0 px-3 py-2 text-xs font-semibold uppercase tracking-[0.1em] transition ${
+                  i === activeIndex
+                    ? "text-white after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-cyan-400"
+                    : "text-white/60 hover:text-white/90"
+                }`}
+              >
+                {cat.title}
+              </button>
+            ))}
+          </div>
         </div>
+        <p className="mt-2 text-center text-[10px] uppercase tracking-widest text-white/40 sm:hidden">Faites defiler</p>
       </div>
 
       <div className="grid gap-3 sm:grid-cols-2">

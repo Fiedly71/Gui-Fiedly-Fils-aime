@@ -47,8 +47,8 @@ export function Footer() {
           <div className="space-y-4">
             <div className="space-y-2">
               <h3 className="text-xl font-semibold text-white">{heroProfile.studio}</h3>
-              <p className="text-sm text-slate-300">{heroProfile.business}</p>
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-slate-200">{heroProfile.business}</p>
+              <p className="text-sm text-slate-300">
                 Creative direction, branding, web design & development
               </p>
             </div>
@@ -106,8 +106,8 @@ export function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-white/5 px-6 py-5 sm:px-10">
-        <div className="flex flex-col gap-3 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+      <div className="border-t border-white/10 px-6 py-5 sm:px-10">
+        <div className="flex flex-col gap-3 text-xs text-slate-300 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-wrap items-center gap-2">
             <span>© {new Date().getFullYear()} GF Digital Studio</span>
             <span className="hidden sm:inline">•</span>

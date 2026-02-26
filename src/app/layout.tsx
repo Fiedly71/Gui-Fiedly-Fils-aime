@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Gui Fiedly Fils-aime | GF Digital Studio",
     description:
       "Branding, posters, and responsive web experiences crafted by Gui Fiedly Fils-aime.",
-    images: ["/images/Gui.jpg"],
+    images: ["/images/GD.jpg"],
     url: "https://uptodateelectronic.com",
   },
 };
