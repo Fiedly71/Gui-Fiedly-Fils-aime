@@ -1,0 +1,104 @@
+{
+  "name": "GF Digital Studio - Agence Web au Cap-Haïtien",
+  "short_name": "GF Digital",
+  "description": "Création de sites web, applications mobiles, intégration MonCash et solutions digitales en Haïti",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "fr-HT",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "GF Digital Studio - Page d'accueil"
+    },
+    {
+      "src": "/screenshots/mobile.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "GF Digital Studio - Vue mobile"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Commander un projet",
+      "short_name": "Commander",
+      "description": "Demander un devis pour votre projet",
+      "url": "/commander",
+      "icons": [{ "src": "/icons/order-icon.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Voir les tarifs",
+      "short_name": "Tarifs",
+      "description": "Consulter nos forfaits et prix",
+      "url": "/tarifs",
+      "icons": [{ "src": "/icons/pricing-icon.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Nous contacter",
+      "short_name": "Contact",
+      "description": "Nous contacter via WhatsApp",
+      "url": "https://wa.me/50932836938",
+      "icons": [{ "src": "/icons/contact-icon.png", "sizes": "96x96" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
