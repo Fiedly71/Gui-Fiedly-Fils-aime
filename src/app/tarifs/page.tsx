@@ -402,7 +402,7 @@ export default function TarifsPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {/* Commander via Form */}
               <a href="/commander" className="glass rounded-2xl p-6 hover:border-indigo-500/50 border border-transparent transition-all block">
                 <div className="flex items-center gap-4 mb-4">
@@ -412,8 +412,8 @@ export default function TarifsPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-white">Commander un Service</h3>
-                    <p className="text-sm text-gray-400">Visa, Mastercard, Apple Pay</p>
+                    <h3 className="text-lg font-bold text-white">Carte Bancaire</h3>
+                    <p className="text-sm text-gray-400">Visa, Mastercard, Amex</p>
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-1 mb-4">
@@ -423,7 +423,33 @@ export default function TarifsPage() {
                   <span className="bg-white/10 text-white text-xs px-2 py-1 rounded">Apple Pay</span>
                 </div>
                 <span className="inline-flex items-center gap-2 bg-[#635BFF] hover:bg-[#5046e5] text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
-                  Remplir le formulaire →
+                  Commander →
+                </span>
+              </a>
+
+              {/* MonCash */}
+              <a 
+                href="https://wa.me/50932836938?text=Bonjour%2C%20je%20souhaite%20payer%20via%20MonCash"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass rounded-2xl p-6 hover:border-yellow-500/50 border border-transparent transition-all block"
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-white">MonCash</h3>
+                    <p className="text-sm text-gray-400">Paiement mobile Haïti</p>
+                  </div>
+                </div>
+                <p className="text-gray-300 text-sm mb-4">
+                  Payez facilement avec votre compte MonCash Digicel.
+                </p>
+                <span className="inline-flex items-center gap-2 bg-yellow-500 hover:bg-yellow-600 text-black text-sm font-medium px-4 py-2 rounded-lg transition-colors">
+                  Payer via MonCash →
                 </span>
               </a>
 
@@ -437,11 +463,11 @@ export default function TarifsPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-white">WhatsApp</h3>
-                    <p className="text-sm text-gray-400">Discutez avec notre équipe</p>
+                    <p className="text-sm text-gray-400">Discutez avec nous</p>
                   </div>
                 </div>
                 <p className="text-gray-300 text-sm mb-4">
-                  Discutez directement avec nous pour personnaliser votre commande.
+                  Personnalisez votre commande en discutant directement.
                 </p>
                 <a
                   href="https://wa.me/50932836938"
