@@ -38,12 +38,12 @@ export default function PWAInstallPrompt() {
     visitCount++;
     localStorage.setItem("pwa-visit-count", visitCount.toString());
 
-    // Show prompt every 5 visits
-    if (visitCount % 5 === 0) {
+    // Show prompt on first visit AND every 5 visits after that
+    if (visitCount === 1 || visitCount % 5 === 0) {
       // Small delay before showing
       setTimeout(() => {
         setShowPrompt(true);
-      }, 3000);
+      }, 2000);
     }
 
     // Listen for beforeinstallprompt event (Chrome/Edge/Android)

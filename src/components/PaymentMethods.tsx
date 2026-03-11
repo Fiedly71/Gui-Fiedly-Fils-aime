@@ -4,6 +4,11 @@ import { useEffect, useRef, useState } from "react";
 
 const paymentMethods = [
   {
+    name: "MonCash",
+    logo: "/images/logos/moncash.png",
+    color: "bg-yellow-500",
+  },
+  {
     name: "Stripe",
     logo: "/images/logos/stripe.svg",
     color: "bg-[#635BFF]",
@@ -52,7 +57,7 @@ export default function PaymentMethods() {
             Tous les <span className="gradient-text">paiements</span>
           </h2>
           <p className="text-sm md:text-base text-gray-400 max-w-xl mx-auto">
-            Stripe et paiements internationaux par carte
+            MonCash, Stripe et paiements internationaux par carte
           </p>
         </div>
 
