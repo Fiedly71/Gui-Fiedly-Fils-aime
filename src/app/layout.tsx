@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { WhatsAppButton } from "@/components";
+import { WhatsAppButton, PWAInstallPrompt } from "@/components";
 import CookieConsent from "@/components/CookieConsent";
 import ScrollToTop from "@/components/ScrollToTop";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -33,12 +33,12 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   icons: {
     icon: [
-      { url: "/icons/icon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/icons/icon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/images/logos/gd.png", type: "image/png" },
     ],
     apple: [
-      { url: "/icons/icon-152x152.png", sizes: "152x152", type: "image/png" },
+      { url: "/images/logos/gd.png", type: "image/png" },
     ],
+    shortcut: "/images/logos/gd.png",
   },
   appleWebApp: {
     capable: true,
@@ -179,6 +179,7 @@ export default function RootLayout({
         <WhatsAppButton />
         <ScrollToTop />
         <CookieConsent />
+        <PWAInstallPrompt />
       </body>
     </html>
   );

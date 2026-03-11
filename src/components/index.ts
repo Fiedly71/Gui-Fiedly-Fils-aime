@@ -18,6 +18,7 @@ export { default as Guarantees } from "./Guarantees";
 export { default as ClientLogos } from "./ClientLogos";
 export { default as Newsletter } from "./Newsletter";
 export { default as ScrollToTop } from "./ScrollToTop";
+export { default as PWAInstallPrompt } from "./PWAInstallPrompt";
 export { default as Breadcrumbs } from "./Breadcrumbs";
 export { default as PageTransition } from "./PageTransition";
 export * from "./Skeletons";
