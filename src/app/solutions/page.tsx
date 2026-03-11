@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Nos Solutions | GF Digital Studio",
+  title: "Nos Solutions | G&D Digital Studio",
   description: "Découvrez nos solutions digitales: intégration MonCash, billetterie QR Code, e-commerce, développement web et mobile pour les entreprises en Haïti.",
 };
 

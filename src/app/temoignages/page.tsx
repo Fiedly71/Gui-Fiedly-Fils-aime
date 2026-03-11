@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Témoignages | GF Digital Studio",
-  description: "Découvrez ce que nos clients disent de GF Digital Studio. Plus de 50 entreprises nous font confiance en Haïti.",
+  title: "Témoignages | G&D Digital Studio",
+  description: "Découvrez ce que nos clients disent de G&D Digital Studio. Plus de 50 entreprises nous font confiance en Haïti.",
 };
 
 const testimonials = [
   {
     name: "Jean-Pierre Duval",
     avatar: "JP",
-    text: "GF Digital Studio a transformé notre restaurant avec leur système de commande en ligne. Les clients adorent et nos ventes ont augmenté de 40%!",
+    text: "G&D Digital Studio a transformé notre restaurant avec leur système de commande en ligne. Les clients adorent et nos ventes ont augmenté de 40%!",
     verified: true,
     company: "Restaurant Lakay",
     service: "E-commerce Restaurant",
@@ -42,7 +42,7 @@ const testimonials = [
   {
     name: "Emmanuel Pierre",
     avatar: "EP",
-    text: "Site web livré en 2 semaines, rapide et moderne. GF Digital Studio c'est le futur du digital en Haïti.",
+    text: "Site web livré en 2 semaines, rapide et moderne. G&D Digital Studio c'est le futur du digital en Haïti.",
     verified: false,
     company: "Pierre & Fils",
     service: "Site Web",
@@ -74,7 +74,7 @@ const testimonials = [
   {
     name: "Yves Saint-Jean",
     avatar: "YS",
-    text: "Notre clinique avait besoin d'un système de rendez-vous en ligne. GF Digital a livré une solution parfaite avec rappels SMS.",
+    text: "Notre clinique avait besoin d'un système de rendez-vous en ligne. G&D Digital a livré une solution parfaite avec rappels SMS.",
     verified: false,
     company: "Clinique Santé Plus",
     service: "Système RDV",
@@ -98,7 +98,7 @@ const testimonials = [
   {
     name: "Guerline Bien-Aimé",
     avatar: "GB",
-    text: "Notre école utilise maintenant un portail parents-élèves grâce à GF Digital. Communication simplifiée, paiements en ligne!",
+    text: "Notre école utilise maintenant un portail parents-élèves grâce à G&D Digital. Communication simplifiée, paiements en ligne!",
     verified: false,
     company: "École Excellence",
     service: "Portail Scolaire",

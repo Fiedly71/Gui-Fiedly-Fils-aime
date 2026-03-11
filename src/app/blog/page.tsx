@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Header, Footer } from "@/components";
 
 export const metadata = {
-  title: "Blog | GF Digital Studio - Conseils & Actualités",
+  title: "Blog | G&D Digital Studio - Conseils & Actualités",
   description: "Découvrez nos articles sur le développement web, les paiements digitaux en Haïti, et les tendances technologiques.",
 };
 

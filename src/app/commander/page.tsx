@@ -191,7 +191,7 @@ export default function CommanderPage() {
     message += `• ${formData.methodePaiement}\n\n`;
     
     message += `━━━━━━━━━━━━━━━━━━━━━━\n`;
-    message += `_Envoyé via GF Digital Studio_`;
+    message += `_Envoyé via G&D Digital Studio_`;
     
     return encodeURIComponent(message);
   };
@@ -249,7 +249,7 @@ export default function CommanderPage() {
         {/* Header */}
         <div className="text-center mb-10">
           <Link href="/" className="inline-block mb-6">
-            <Image src="/images/gd.png" alt="GF Digital Studio" width={60} height={60} />
+            <Image src="/images/gd.png" alt="G&D Digital Studio" width={60} height={60} />
           </Link>
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Commander un <span className="gradient-text">Service</span>

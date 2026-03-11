@@ -32,7 +32,7 @@ const caseStudies = {
     ],
     technologies: ["Next.js", "React", "Tailwind CSS", "MonCash API", "PostgreSQL", "Vercel"],
     testimonial: {
-      quote: "GF Digital Studio a transformé notre façon de servir nos clients. Les commandes en ligne ont explosé !",
+      quote: "G&D Digital Studio a transformé notre façon de servir nos clients. Les commandes en ligne ont explosé !",
       author: "Jean-Pierre Louis",
       role: "Propriétaire, Restaurant Lakay",
     },
@@ -175,7 +175,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   if (!study) return { title: "Projet non trouvé" };
   
   return {
-    title: `${study.title} | Étude de cas - GF Digital Studio`,
+    title: `${study.title} | Étude de cas - G&D Digital Studio`,
     description: study.subtitle,
   };
 }

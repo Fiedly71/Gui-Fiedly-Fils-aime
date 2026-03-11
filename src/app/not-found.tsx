@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Page non trouvée | GF Digital Studio",
+  title: "Page non trouvée | G&D Digital Studio",
   description: "La page que vous recherchez n'existe pas ou a été déplacée.",
 };
 

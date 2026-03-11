@@ -34,15 +34,15 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center space-x-3 mb-6">
+            <Link href="/" className="flex items-center space-x-2 mb-6">
               <Image 
                 src="/images/logos/gd.png" 
-                alt="GF Digital Studio Logo" 
-                width={70} 
-                height={70}
+                alt="G&D Digital Studio Logo" 
+                width={50} 
+                height={50}
                 className=""
               />
-              <span className="font-bold text-xl text-white">Digital Studio</span>
+              <span className="font-bold text-sm text-white">Graphics & Development</span>
             </Link>
             <p className="text-gray-400 mb-6 max-w-sm">
               Studio de développement web et d&apos;entrepreneuriat digital basé au Cap-Haïtien. 
@@ -125,7 +125,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} GF Digital Studio. Basé au Cap-Haïtien, Haïti.
+            © {new Date().getFullYear()} G&D Digital Studio. Basé au Cap-Haïtien, Haïti.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             {footerLinks.legal.map((link, index) => (

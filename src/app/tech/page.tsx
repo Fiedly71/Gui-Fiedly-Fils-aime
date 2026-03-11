@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Stack Technique | GF Digital Studio",
+  title: "Stack Technique | G&D Digital Studio",
   description: "Découvrez les technologies modernes que nous utilisons: Next.js, React, Node.js, MongoDB, et plus. Solutions complètes pour votre projet digital en Haïti.",
 };
 

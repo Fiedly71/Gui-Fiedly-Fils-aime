@@ -178,7 +178,7 @@ export default function EcommercePage() {
                 <div className="text-4xl">💬</div>
                 <div>
                   <p className="text-xl text-white italic mb-4">
-                    &quot;GF Digital Studio a transformé notre restaurant avec leur système de commande en ligne. 
+                    &quot;G&D Digital Studio a transformé notre restaurant avec leur système de commande en ligne. 
                     Les clients adorent et nos ventes ont augmenté de 40%!&quot;
                   </p>
                   <p className="text-gray-400">— Client Restaurant, Cap-Haïtien</p>

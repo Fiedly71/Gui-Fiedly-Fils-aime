@@ -8,7 +8,7 @@ Place the following images in the `/public` folder:
 For Open Graph/Facebook/LinkedIn sharing.
 - Size: 1200x630 pixels
 - Format: PNG or JPG  
-- Content: GF Digital Studio logo + tagline + abstract tech background
+- Content: G&D Digital Studio logo + tagline + abstract tech background
 
 ### twitter-image.png (1200x630px)
 For Twitter/X card sharing.
@@ -45,5 +45,5 @@ Create these icons for the PWA:
 Background: Dark gradient (#0a0a0f to #1a1a2f)
 Primary Color: Indigo (#6366f1)
 Secondary: Cyan (#06b6d4)
-Logo: "GF" or full "GF Digital Studio" 
+Logo: "GF" or full "G&D Digital Studio" 
 Tagline: "Solutions Digitales en Haïti" | "Votre Partenaire Tech"

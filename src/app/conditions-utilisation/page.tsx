@@ -19,7 +19,7 @@ export default function ConditionsUtilisationPage() {
             <section className="glass rounded-2xl p-6 md:p-8 mb-8">
               <h2 className="text-xl font-bold text-white mb-4">1. Acceptation des conditions</h2>
               <p className="text-gray-300 leading-relaxed">
-                En accédant et en utilisant le site web de GF Digital Studio, vous acceptez d&apos;être lié par ces 
+                En accédant et en utilisant le site web de G&D Digital Studio, vous acceptez d&apos;être lié par ces 
                 Conditions Générales d&apos;Utilisation. Si vous n&apos;acceptez pas ces conditions, veuillez ne pas 
                 utiliser notre site ou nos services.
               </p>
@@ -28,7 +28,7 @@ export default function ConditionsUtilisationPage() {
             <section className="glass rounded-2xl p-6 md:p-8 mb-8">
               <h2 className="text-xl font-bold text-white mb-4">2. Services proposés</h2>
               <p className="text-gray-300 leading-relaxed mb-4">
-                GF Digital Studio propose les services suivants :
+                G&D Digital Studio propose les services suivants :
               </p>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>Création de sites web vitrine et e-commerce</li>
@@ -73,7 +73,7 @@ export default function ConditionsUtilisationPage() {
               <h2 className="text-xl font-bold text-white mb-4">6. Propriété intellectuelle</h2>
               <div className="space-y-4 text-gray-300">
                 <p><strong>6.1</strong> À la réception du paiement complet, tous les droits sur les livrables (code source, designs) vous sont transférés.</p>
-                <p><strong>6.2</strong> GF Digital Studio se réserve le droit d&apos;afficher les projets réalisés dans son portfolio, sauf demande contraire écrite.</p>
+                <p><strong>6.2</strong> G&D Digital Studio se réserve le droit d&apos;afficher les projets réalisés dans son portfolio, sauf demande contraire écrite.</p>
                 <p><strong>6.3</strong> Vous garantissez que tout contenu fourni (textes, images, logos) ne viole pas les droits de tiers.</p>
               </div>
             </section>
@@ -108,7 +108,7 @@ export default function ConditionsUtilisationPage() {
             <section className="glass rounded-2xl p-6 md:p-8 mb-8">
               <h2 className="text-xl font-bold text-white mb-4">10. Limitation de responsabilité</h2>
               <p className="text-gray-300 leading-relaxed">
-                GF Digital Studio ne peut être tenu responsable des pertes indirectes, y compris les pertes 
+                G&D Digital Studio ne peut être tenu responsable des pertes indirectes, y compris les pertes 
                 de profits, de données ou d&apos;opportunités commerciales résultant de l&apos;utilisation ou de 
                 l&apos;impossibilité d&apos;utiliser nos services.
               </p>

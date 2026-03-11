@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Paiement | GF Digital Studio",
+  title: "Paiement | G&D Digital Studio",
   description: "Payez vos services en toute sécurité via Stripe. Visa, Mastercard, Apple Pay acceptés.",
 };
 

@@ -90,14 +90,14 @@ export default function PWAInstallPrompt() {
           <div className="w-16 h-16 rounded-2xl overflow-hidden bg-white/10 flex items-center justify-center">
             <Image
               src="/images/logos/gd.png"
-              alt="GF Digital Studio"
+              alt="G&D Digital Studio"
               width={64}
               height={64}
               className="object-contain"
             />
           </div>
           <div>
-            <h3 className="text-xl font-bold text-white">Installer GF Digital</h3>
+            <h3 className="text-xl font-bold text-white">Installer G&D Digital</h3>
             <p className="text-gray-400 text-sm">Accès rapide depuis votre écran</p>
           </div>
         </div>

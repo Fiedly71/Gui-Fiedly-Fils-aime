@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: "Jean-Pierre D.",
     avatar: "JP",
-    text: "GF Digital Studio a transformé notre restaurant. Les ventes ont augmenté de 40%!",
+    text: "G&D Digital Studio a transformé notre restaurant. Les ventes ont augmenté de 40%!",
     company: "Restaurant Lakay",
   },
   {

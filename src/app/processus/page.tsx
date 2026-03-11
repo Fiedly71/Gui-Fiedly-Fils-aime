@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Notre Processus | GF Digital Studio",
+  title: "Notre Processus | G&D Digital Studio",
   description: "Découvrez notre processus de travail en 5 étapes: consultation, maquette, développement, tests et livraison. Votre projet digital en Haïti entre de bonnes mains.",
 };
 

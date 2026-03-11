@@ -1,6 +1,6 @@
 {
-  "name": "GF Digital Studio - Agence Web au Cap-Haïtien",
-  "short_name": "GF Digital",
+  "name": "G&D Digital Studio - Graphics and Development",
+  "short_name": "G&D Digital",
   "description": "Création de sites web, applications mobiles, intégration MonCash et solutions digitales en Haïti",
   "start_url": "/",
   "display": "standalone",
@@ -30,14 +30,14 @@
       "sizes": "1920x1080",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "GF Digital Studio - Page d'accueil"
+      "label": "G&D Digital Studio - Page d'accueil"
     },
     {
       "src": "/screenshots/mobile.png",
       "sizes": "750x1334",
       "type": "image/png",
       "form_factor": "narrow",
-      "label": "GF Digital Studio - Vue mobile"
+      "label": "G&D Digital Studio - Vue mobile"
     }
   ],
   "shortcuts": [

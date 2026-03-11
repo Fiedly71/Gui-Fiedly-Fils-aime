@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Nos Garanties | GF Digital Studio",
+  title: "Nos Garanties | G&D Digital Studio",
   description: "Découvrez nos garanties: satisfaction garantie, support 30 jours, sécurité SSL, performance optimisée. Votre tranquillité d'esprit est notre priorité.",
 };
 
@@ -194,7 +194,7 @@ export default function GarantiesPage() {
               </svg>
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Garantie Qualité GF Digital Studio
+              Garantie Qualité G&D Digital Studio
             </h2>
             <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
               Chaque projet est soumis à notre processus de contrôle qualité rigoureux. 

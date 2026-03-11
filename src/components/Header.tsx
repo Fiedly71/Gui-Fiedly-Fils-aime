@@ -29,15 +29,15 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center space-x-2">
             <Image 
               src="/images/logos/gd.png" 
-              alt="GF Digital Studio Logo" 
-              width={80} 
-              height={80}
+              alt="G&D Digital Studio Logo" 
+              width={50} 
+              height={50}
               className=""
             />
-            <span className="font-bold text-xl text-white">Digital Studio</span>
+            <span className="font-bold text-white text-[10px] sm:text-xs md:text-sm lg:text-base whitespace-nowrap">Graphics & Development</span>
           </Link>
 
           {/* Desktop Navigation */}

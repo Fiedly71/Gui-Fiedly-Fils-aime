@@ -26,10 +26,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "GF Digital Studio | Développement Web & Solutions Digitales - Cap-Haïtien",
+  title: "G&D Digital Studio | Développement Web & Solutions Digitales - Cap-Haïtien",
   description: "Studio de développement web et d'entrepreneuriat digital basé au Cap-Haïtien. Experts en paiement MonCash, billetterie QR Code, plateformes e-commerce. Next.js, React, Tailwind CSS.",
   keywords: ["développement web", "Haïti", "Cap-Haïtien", "MonCash", "QR Code", "billetterie", "e-commerce", "Next.js", "React"],
-  authors: [{ name: "GF Digital Studio" }],
+  authors: [{ name: "G&D Digital Studio" }],
   manifest: "/manifest.json",
   icons: {
     icon: [
@@ -43,27 +43,27 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "GF Digital",
+    title: "G&D Digital",
   },
   openGraph: {
-    title: "GF Digital Studio | Votre Partenaire Tech en Haïti",
+    title: "G&D Digital Studio | Votre Partenaire Tech en Haïti",
     description: "Création de sites web, applications mobiles, intégration MonCash et solutions digitales en Haïti. Plus de 50 clients satisfaits.",
     type: "website",
     locale: "fr_HT",
     url: "https://gfdigitalstudio.com",
-    siteName: "GF Digital Studio",
+    siteName: "G&D Digital Studio",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "GF Digital Studio - Agence Web au Cap-Haïtien",
+        alt: "G&D Digital Studio - Agence Web au Cap-Haïtien",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GF Digital Studio | Solutions Digitales en Haïti",
+    title: "G&D Digital Studio | Solutions Digitales en Haïti",
     description: "Experts MonCash, e-commerce, billetterie QR Code. Votre partenaire digital au Cap-Haïtien.",
     images: ["/twitter-image.png"],
     creator: "@gfdigitalstudio",
@@ -91,7 +91,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "GF Digital Studio",
+  "name": "G&D Digital Studio",
   "image": "https://gfdigitalstudio.com/images/logos/gd.png",
   "description": "Studio de développement web et d'entrepreneuriat digital basé au Cap-Haïtien, Haïti. Experts en intégration MonCash, billetterie QR Code, et solutions e-commerce.",
   "@id": "https://gfdigitalstudio.com",

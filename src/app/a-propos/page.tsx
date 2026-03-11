@@ -3,15 +3,15 @@ import Image from "next/image";
 import { Header, Footer } from "@/components";
 
 export const metadata = {
-  title: "À Propos | GF Digital Studio - Notre Histoire",
-  description: "Découvrez l'histoire de GF Digital Studio, studio de développement web basé au Cap-Haïtien. Notre mission: démocratiser l'accès aux technologies digitales en Haïti.",
+  title: "À Propos | G&D Digital Studio - Notre Histoire",
+  description: "Découvrez l'histoire de G&D Digital Studio, studio de développement web basé au Cap-Haïtien. Notre mission: démocratiser l'accès aux technologies digitales en Haïti.",
 };
 
 const team = [
   {
     name: "Gui-Fiedly Fils-Aimé",
     role: "Fondateur & Lead Developer",
-    bio: "Passionné de technologie et entrepreneur, Gui-Fiedly a fondé GF Digital Studio avec la vision de transformer le paysage digital haïtien.",
+    bio: "Passionné de technologie et entrepreneur, Gui-Fiedly a fondé G&D Digital Studio avec la vision de transformer le paysage digital haïtien.",
     image: "/images/team/founder.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/gui-fiedly-fils-aime-8aab203a8",
@@ -44,7 +44,7 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2023", event: "Création de GF Digital Studio au Cap-Haïtien" },
+  { year: "2023", event: "Création de G&D Digital Studio au Cap-Haïtien" },
   { year: "2023", event: "Premier projet d'intégration MonCash" },
   { year: "2024", event: "Lancement de notre solution de billetterie QR Code" },
   { year: "2024", event: "50+ projets livrés" },
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 <span className="gradient-text">d&apos;Haïti</span>
               </h1>
               <p className="text-xl text-gray-400 leading-relaxed">
-                GF Digital Studio est né d&apos;une vision simple : rendre les technologies 
+                G&D Digital Studio est né d&apos;une vision simple : rendre les technologies 
                 digitales accessibles à toutes les entreprises haïtiennes, quelle que soit 
                 leur taille ou leur budget.
               </p>
@@ -187,7 +187,7 @@ export default function AboutPage() {
                 L&apos;Équipe
               </h2>
               <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-                Les personnes passionnées derrière GF Digital Studio.
+                Les personnes passionnées derrière G&D Digital Studio.
               </p>
             </div>
 

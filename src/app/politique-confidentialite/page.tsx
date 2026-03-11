@@ -19,7 +19,7 @@ export default function PolitiqueConfidentialitePage() {
             <section className="glass rounded-2xl p-6 md:p-8 mb-8">
               <h2 className="text-xl font-bold text-white mb-4">1. Introduction</h2>
               <p className="text-gray-300 leading-relaxed">
-                GF Digital Studio (&quot;nous&quot;, &quot;notre&quot;, &quot;nos&quot;) s&apos;engage à protéger la vie privée de ses utilisateurs. 
+                G&D Digital Studio (&quot;nous&quot;, &quot;notre&quot;, &quot;nos&quot;) s&apos;engage à protéger la vie privée de ses utilisateurs. 
                 Cette politique de confidentialité explique comment nous collectons, utilisons, divulguons et protégeons 
                 vos informations personnelles lorsque vous visitez notre site web ou utilisez nos services.
               </p>

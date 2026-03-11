@@ -114,7 +114,7 @@ export default function TarifsPage() {
   const [activeTab, setActiveTab] = useState<"sites" | "apps" | "maintenance">("sites");
 
   const whatsappMessage = encodeURIComponent(
-    "Bonjour GF Digital Studio! Je suis intéressé(e) par vos services. Pouvez-vous me donner plus d'informations?"
+    "Bonjour G&D Digital Studio! Je suis intéressé(e) par vos services. Pouvez-vous me donner plus d'informations?"
   );
   const whatsappLink = `https://wa.me/50932836938?text=${whatsappMessage}`;
 
