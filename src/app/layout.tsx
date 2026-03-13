@@ -26,9 +26,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "G&D Digital Studio | Développement Web & Solutions Digitales - Haïti & International",
-  description: "Studio de développement web et d'entrepreneuriat digital. Experts en paiement MonCash, billetterie QR Code, plateformes e-commerce. Nous servons Haïti, la diaspora et le monde entier.",
-  keywords: ["développement web", "Haïti", "diaspora", "international", "MonCash", "QR Code", "billetterie", "e-commerce", "Next.js", "React"],
+  title: "G&D Digital Studio | Développement Web & Solutions Digitales Worldwide",
+  description: "Studio de développement web et d'entrepreneuriat digital. Experts en paiement mobile, billetterie QR Code, plateformes e-commerce. Service mondial.",
+  keywords: ["développement web", "worldwide", "remote", "international", "MonCash", "QR Code", "billetterie", "e-commerce", "Next.js", "React"],
   authors: [{ name: "G&D Digital Studio" }],
   manifest: "/manifest.json",
   icons: {

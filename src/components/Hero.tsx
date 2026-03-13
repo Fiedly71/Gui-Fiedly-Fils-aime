@@ -14,7 +14,7 @@ export default function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 glass rounded-full mb-8 animate-fade-in-up">
             <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-            <span className="text-sm text-gray-300 font-medium">Haïti 🌍 Diaspora 🌍 International</span>
+            <span className="text-sm text-gray-300 font-medium">Worldwide 🌍</span>
           </div>
 
           {/* Heading */}
