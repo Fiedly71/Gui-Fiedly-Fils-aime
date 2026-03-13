@@ -98,7 +98,24 @@ export default function EcommercePage() {
                     Voir les tarifs
                   </Link>
                   <a
-                    href="https://wa.me/50932836938?text=Bonjour! Je suis intéressé par une plateforme e-commerce."
+                    href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`🛒 *DEMANDE E-COMMERCE - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Services - Plateforme E-commerce (gdigitalstudio.com/services/ecommerce)
+
+📦 *Service:* Création boutique en ligne
+
+✅ *Ce que je recherche:*
+• Boutique en ligne complète
+• Paiement intégré (Stripe, MonCash)
+• Gestion des stocks
+• Notifications automatiques
+• Suivi des commandes
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Je souhaite créer une boutique en ligne. Pouvez-vous me guider?`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="border border-gray-600 text-white px-8 py-4 rounded-xl font-semibold hover:border-pink-500 hover:bg-pink-500/10 transition-all inline-flex items-center gap-2"
@@ -205,7 +222,15 @@ export default function EcommercePage() {
                 Voir les tarifs
               </Link>
               <a
-                href="https://wa.me/50932836938"
+                href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`🛒 *JE VEUX UNE BOUTIQUE EN LIGNE - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Services - Plateforme E-commerce
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Je veux créer ma boutique en ligne. Je suis prêt(e) à démarrer!`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-pink-500 text-pink-400 px-8 py-4 rounded-xl font-semibold hover:bg-pink-500/10 transition-all"

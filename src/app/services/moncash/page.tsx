@@ -79,7 +79,23 @@ export default function MonCashPage() {
                     Voir les tarifs
                   </Link>
                   <a
-                    href="https://wa.me/50932836938?text=Bonjour! Je suis intéressé par l'intégration MonCash."
+                    href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`💳 *DEMANDE INTÉGRATION MONCASH - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Services - Intégration MonCash (gdigitalstudio.com/services/moncash)
+
+📦 *Service:* Intégration paiement MonCash
+
+✅ *Ce que je recherche:*
+• Intégration API MonCash
+• Paiement sécurisé
+• Notifications automatiques
+• Dashboard de suivi
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Je souhaite intégrer MonCash sur mon site/application. Pouvez-vous me guider?`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="border border-gray-600 text-white px-8 py-4 rounded-xl font-semibold hover:border-yellow-500 hover:bg-yellow-500/10 transition-all inline-flex items-center gap-2"
@@ -177,7 +193,15 @@ export default function MonCashPage() {
                 Voir les tarifs
               </Link>
               <a
-                href="https://wa.me/50932836938"
+                href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`💳 *JE VEUX INTÉGRER MONCASH - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Services - Intégration MonCash
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Je veux intégrer MonCash sur mon site ou application. Démarrons!`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-yellow-500 text-yellow-400 px-8 py-4 rounded-xl font-semibold hover:bg-yellow-500/10 transition-all"

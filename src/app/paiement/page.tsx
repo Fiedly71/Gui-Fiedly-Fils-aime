@@ -108,7 +108,15 @@ export default function PaiementPage() {
           
           {/* WhatsApp Option */}
           <a
-            href="https://wa.me/50932836938?text=Bonjour%2C%20je%20souhaite%20discuter%20d%27un%20paiement"
+            href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`💳 *DEMANDE PAIEMENT - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Paiement (gdigitalstudio.com/paiement)
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Je souhaite discuter des options de paiement avant de commander.`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-6 glass rounded-2xl p-6 card-hover group block text-center"
@@ -189,7 +197,15 @@ export default function PaiementPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="https://wa.me/50932836938?text=Bonjour%2C%20j%27ai%20besoin%20d%27aide%20pour%20effectuer%20un%20paiement."
+                href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`🆘 *AIDE PAIEMENT - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Paiement - Besoin d'aide (gdigitalstudio.com/paiement)
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! J'ai besoin d'aide pour effectuer un paiement. Pouvez-vous m'assister?`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-500 text-white rounded-xl font-medium transition-colors"

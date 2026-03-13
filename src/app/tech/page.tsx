@@ -191,7 +191,15 @@ export default function TechPage() {
               Discutons de votre projet et trouvons les meilleures technologies pour vos besoins.
             </p>
             <a
-              href="https://wa.me/50932836938?text=Bonjour%2C%20je%20souhaite%20discuter%20de%20mon%20projet%20technique."
+              href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`🛠️ *DEMANDE DEPUIS PAGE TECH - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Technologies (gdigitalstudio.com/tech)
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! J'ai vu les technologies que vous utilisez et je souhaite discuter d'un projet technique avec vous.`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white rounded-xl font-medium hover:scale-105 transition-transform glow-primary"

@@ -240,7 +240,15 @@ export default function FAQPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="https://wa.me/50932836938?text=Bonjour%2C%20j%27ai%20une%20question."
+                href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`❓ *QUESTION - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* FAQ (gdigitalstudio.com/faq)
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! J'ai lu la FAQ mais j'ai encore une question. Pouvez-vous m'aider?`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-500 text-white rounded-xl font-medium transition-colors"

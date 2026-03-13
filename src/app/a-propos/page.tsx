@@ -248,7 +248,15 @@ export default function AboutPage() {
                 </svg>
               </Link>
               <a
-                href="https://wa.me/50932836938"
+                href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`👋 *CONTACT DEPUIS À PROPOS - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* À propos (gdigitalstudio.com/a-propos)
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! J'ai lu votre histoire et je suis convaincu(e). Je souhaite travailler avec vous.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-gray-600 text-white px-8 py-4 rounded-xl font-semibold hover:border-green-500 hover:bg-green-500/10 transition-all inline-flex items-center justify-center gap-2"

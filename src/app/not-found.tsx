@@ -38,7 +38,15 @@ export default function NotFound() {
               Retour à l&apos;accueil
             </Link>
             <a
-              href="https://wa.me/50932836938"
+              href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`❓ *PAGE NON TROUVÉE - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Page 404 - Page non trouvée
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! J'ai essayé d'accéder à une page qui n'existe pas sur votre site. Pouvez-vous m'aider?`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="border border-gray-600 text-white px-8 py-4 rounded-xl font-semibold hover:border-green-500 hover:bg-green-500/10 transition-all inline-flex items-center justify-center gap-2"

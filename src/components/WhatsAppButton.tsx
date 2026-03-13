@@ -1,11 +1,53 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function WhatsAppButton() {
   const [isTooltipVisible, setIsTooltipVisible] = useState(false);
+  const [currentUrl, setCurrentUrl] = useState("");
   const phoneNumber = "50932836938";
-  const message = "Bonjour! Je souhaite avoir plus d'informations sur vos services.";
+  
+  useEffect(() => {
+    setCurrentUrl(window.location.href);
+  }, []);
+  
+  const getPageContext = () => {
+    const path = typeof window !== "undefined" ? window.location.pathname : "";
+    
+    const pageContextMap: { [key: string]: string } = {
+      "/": "Page d'accueil",
+      "/tarifs": "Page des tarifs",
+      "/services/web": "Service: Création de sites web",
+      "/services/ecommerce": "Service: Plateforme E-commerce",
+      "/services/billetterie": "Service: Système de billetterie QR Code",
+      "/services/moncash": "Service: Intégration MonCash",
+      "/solutions": "Page des solutions",
+      "/realisations": "Portfolio des réalisations",
+      "/temoignages": "Page des témoignages",
+      "/a-propos": "Page À propos",
+      "/faq": "Page FAQ",
+      "/commander": "Formulaire de commande",
+      "/paiement": "Page de paiement",
+      "/tech": "Page des technologies",
+      "/processus": "Page du processus de travail",
+      "/garanties": "Page des garanties",
+    };
+    
+    return pageContextMap[path] || `Page: ${path}`;
+  };
+  
+  const message = `🔔 *NOUVEAU MESSAGE - G&D Digital Studio*
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Provenance:* ${getPageContext()}
+🔗 *URL:* ${currentUrl || "Site web"}
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Je visite votre site et j'ai des questions.
+
+Je souhaite en savoir plus sur vos services.`;
 
   return (
     <div className="fixed bottom-6 right-6 z-40">

@@ -99,7 +99,24 @@ export default function BilletteriePage() {
                     Voir les tarifs
                   </Link>
                   <a
-                    href="https://wa.me/50932836938?text=Bonjour! Je suis intéressé par votre système de billetterie QR Code."
+                    href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`🎫 *DEMANDE BILLETTERIE QR - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Services - Système de billetterie (gdigitalstudio.com/services/billetterie)
+
+📦 *Service:* Billetterie avec QR Code
+
+✅ *Ce que je recherche:*
+• Vente de billets en ligne
+• QR Code pour validation
+• Dashboard de gestion
+• Rapports de ventes
+• Paiement sécurisé
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! J'organise un événement et j'ai besoin d'un système de billetterie. Pouvez-vous m'aider?`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="border border-gray-600 text-white px-8 py-4 rounded-xl font-semibold hover:border-cyan-500 hover:bg-cyan-500/10 transition-all inline-flex items-center gap-2"
@@ -187,7 +204,15 @@ export default function BilletteriePage() {
                 Voir les tarifs
               </Link>
               <a
-                href="https://wa.me/50932836938"
+                href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`🎫 *JE VEUX UN SYSTÈME DE BILLETTERIE - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Services - Billetterie QR Code
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! J'organise un événement et je veux votre système de billetterie. Démarrons!`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-cyan-500 text-cyan-400 px-8 py-4 rounded-xl font-semibold hover:bg-cyan-500/10 transition-all"

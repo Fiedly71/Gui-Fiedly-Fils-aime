@@ -226,7 +226,15 @@ export default function GarantiesPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/50932836938?text=Bonjour%2C%20je%20souhaite%20discuter%20d%27un%20projet."
+              href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`✅ *DEMANDE DEPUIS PAGE GARANTIES - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Nos garanties (gdigitalstudio.com/garanties)
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Vos garanties me rassurent. Je souhaite démarrer un projet avec vous.`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white rounded-xl font-medium hover:scale-105 transition-transform glow-primary"

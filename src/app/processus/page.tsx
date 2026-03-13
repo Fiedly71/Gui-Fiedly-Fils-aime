@@ -207,7 +207,15 @@ export default function ProcessusPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="https://wa.me/50932836938?text=Bonjour%2C%20je%20souhaite%20démarrer%20un%20projet."
+                href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`🚀 *DEMANDE DEPUIS PAGE PROCESSUS - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Notre processus (gdigitalstudio.com/processus)
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! J'ai compris votre processus de travail et je suis prêt(e) à démarrer un projet avec vous.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white rounded-xl font-medium hover:scale-105 transition-transform glow-primary"

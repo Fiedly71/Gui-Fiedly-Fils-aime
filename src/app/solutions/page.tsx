@@ -147,7 +147,24 @@ export default function SolutionsPage() {
                       Commander
                     </a>
                     <a
-                      href="https://wa.me/50932836938?text=Bonjour%2C%20je%20suis%20intéressé(e)%20par%20votre%20service%20de%20"
+                      href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`📋 *DEMANDE - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Solutions (gdigitalstudio.com/solutions)
+
+${service.icon} *Service:* ${service.title}
+💰 *Prix:* ${service.price}
+
+📝 *Description:*
+${service.description}
+
+✅ *Fonctionnalités:*
+${service.features.map(f => `• ${f}`).join('\n')}
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Ce service m'intéresse. Pouvez-vous me donner plus d'informations?`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-1 text-white bg-green-600 hover:bg-green-500 px-3 py-2 rounded-lg text-xs font-medium transition-colors"
@@ -177,7 +194,17 @@ export default function SolutionsPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="https://wa.me/50932836938?text=Bonjour%2C%20je%20souhaite%20discuter%20d%27un%20projet."
+                href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`📋 *DEMANDE DEVIS - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Solutions (gdigitalstudio.com/solutions)
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! J'ai consulté vos solutions et j'ai un projet en tête. Je souhaite obtenir un devis personnalisé.
+
+Merci de me contacter pour discuter de mes besoins.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-500 text-white rounded-xl font-medium transition-colors"

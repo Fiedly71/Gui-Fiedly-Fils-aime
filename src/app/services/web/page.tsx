@@ -117,7 +117,23 @@ export default function WebDevPage() {
                     Voir les tarifs
                   </Link>
                   <a
-                    href="https://wa.me/50932836938?text=Bonjour! Je souhaite créer un site web."
+                    href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`🌐 *DEMANDE CRÉATION SITE WEB - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Services - Création de sites web (gdigitalstudio.com/services/web)
+
+📦 *Service:* Création de site web professionnel
+
+✅ *Ce que je recherche:*
+• Un site moderne et responsive
+• Design personnalisé
+• Optimisé pour mobile
+• Intégration réseaux sociaux
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Je souhaite créer un site web pour mon entreprise. Pouvez-vous me contacter pour discuter de mon projet?`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="border border-gray-600 text-white px-8 py-4 rounded-xl font-semibold hover:border-green-500 hover:bg-green-500/10 transition-all inline-flex items-center gap-2"
@@ -243,7 +259,15 @@ export default function WebDevPage() {
                 Voir les tarifs
               </Link>
               <a
-                href="https://wa.me/50932836938"
+                href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`🌐 *JE VEUX UN SITE WEB - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Services - Création de sites web
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Je suis convaincu(e) et je veux créer mon site web avec vous. Contactez-moi pour démarrer!`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-green-500 text-green-400 px-8 py-4 rounded-xl font-semibold hover:bg-green-500/10 transition-all"

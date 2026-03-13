@@ -41,7 +41,17 @@ export default function PaiementSuccesPage() {
           
           {/* WhatsApp CTA */}
           <a
-            href="https://wa.me/50932836938?text=Bonjour!%20Je%20viens%20d%27effectuer%20un%20paiement%20sur%20votre%20site.%20Voici%20mon%20re%C3%A7u%20pour%20confirmation."
+            href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`✅ *CONFIRMATION PAIEMENT - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Paiement réussi (gdigitalstudio.com/paiement/succes)
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Je viens d'effectuer un paiement sur votre site.
+
+📎 Voici mon reçu pour confirmation et pour démarrer mon projet.`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-500 text-white px-6 py-4 rounded-xl font-semibold transition-colors mb-4"

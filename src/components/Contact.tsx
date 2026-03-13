@@ -135,7 +135,17 @@ export default function Contact() {
                 </span>
               </a>
               <a 
-                href="https://wa.me/50932836938?text=Bonjour%2C%20je%20souhaite%20discuter%20d%27un%20projet" 
+                href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`📬 *CONTACT - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Page d'accueil - Section Contact
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Je souhaite discuter d'un projet avec vous.
+
+Je vous contacte depuis votre site web.`)}`}
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-full flex items-center justify-center gap-2 px-4 py-3 glass border border-green-500/30 hover:border-green-500 rounded-xl text-white font-medium transition-colors"

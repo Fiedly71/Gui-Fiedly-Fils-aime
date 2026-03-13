@@ -279,7 +279,17 @@ export default function RealisationsPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="https://wa.me/50932836938?text=Bonjour%2C%20je%20souhaite%20commander%20un%20projet."
+                href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`🎨 *DEMANDE DEPUIS PORTFOLIO - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Réalisations (gdigitalstudio.com/realisations)
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! J'ai vu vos réalisations et j'aimerais un projet similaire.
+
+Pouvez-vous me contacter pour en discuter?`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white rounded-xl font-medium hover:scale-105 transition-transform glow-primary"
@@ -290,7 +300,15 @@ export default function RealisationsPage() {
                 Commander un Projet
               </a>
               <a
-                href="https://wa.me/50932836938"
+                href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`🎨 *QUESTION PORTFOLIO - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Portfolio (gdigitalstudio.com/realisations)
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! J'ai vu votre portfolio et j'ai des questions sur un projet similaire.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 glass text-white rounded-xl font-medium hover:scale-105 transition-transform border border-green-500/30"

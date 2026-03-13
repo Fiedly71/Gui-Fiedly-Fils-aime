@@ -114,7 +114,16 @@ export default function TarifsPage() {
   const [activeTab, setActiveTab] = useState<"sites" | "apps" | "maintenance">("sites");
 
   const whatsappMessage = encodeURIComponent(
-    "Bonjour G&D Digital Studio! Je suis intéressé(e) par vos services. Pouvez-vous me donner plus d'informations?"
+`🛒 *DEMANDE DEPUIS PAGE TARIFS - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Tarifs (gdigitalstudio.com/tarifs)
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Je consulte vos tarifs et j'aimerais avoir plus d'informations sur vos services.
+
+Merci de me rappeler pour discuter de mon projet.`
   );
   const whatsappLink = `https://wa.me/50932836938?text=${whatsappMessage}`;
 
@@ -264,7 +273,24 @@ export default function TarifsPage() {
                     </ul>
 
                     <a
-                      href={`https://wa.me/50932836938?text=${encodeURIComponent(`Bonjour! Je suis intéressé(e) par le ${pack.name} (${pack.price}).`)}`}
+                      href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`🛒 *DEMANDE DE DEVIS - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Tarifs (gdigitalstudio.com/tarifs)
+
+📦 *Pack choisi:* ${pack.name}
+💰 *Prix:* ${pack.price}
+⏱️ *Délai de livraison:* ${pack.delivery}
+
+✅ *Fonctionnalités incluses:*
+${pack.features.map(f => `• ${f}`).join('\n')}
+
+${pack.notIncluded.length > 0 ? `❌ *Non inclus:*\n${pack.notIncluded.map(f => `• ${f}`).join('\n')}` : ''}
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Je suis intéressé(e) par ce pack. Pouvez-vous me donner plus de détails?`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`w-full py-3 rounded-xl font-semibold transition-all flex items-center justify-center gap-2 ${
@@ -327,7 +353,21 @@ export default function TarifsPage() {
                     </ul>
 
                     <a
-                      href={`https://wa.me/50932836938?text=${encodeURIComponent(`Bonjour! Je suis intéressé(e) par ${app.name} (${app.price}).`)}`}
+                      href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`📱 *DEMANDE APP MOBILE - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Tarifs - Applications Mobiles (gdigitalstudio.com/tarifs)
+
+📦 *Service:* ${app.name}
+💰 *Budget estimé:* ${app.price}
+
+✅ *Fonctionnalités:*
+${app.features.map(f => `• ${f}`).join('\n')}
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Je souhaite développer une application mobile. Pouvez-vous me guider?`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full py-3 rounded-xl font-semibold transition-all flex items-center justify-center gap-2 border border-gray-600 text-white hover:border-green-500 hover:bg-green-500/10"
@@ -373,7 +413,21 @@ export default function TarifsPage() {
                 </ul>
 
                 <a
-                  href={`https://wa.me/50932836938?text=${encodeURIComponent(`Bonjour! Je suis intéressé(e) par votre service de maintenance (${maintenance.price}/mois).`)}`}
+                  href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`🔧 *DEMANDE MAINTENANCE - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Tarifs - Maintenance (gdigitalstudio.com/tarifs)
+
+📦 *Service:* Maintenance & Support
+💰 *Tarif:* ${maintenance.price} ${maintenance.period}
+
+✅ *Services inclus:*
+${maintenance.features.map(f => `• ${f}`).join('\n')}
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! Je souhaite souscrire à votre service de maintenance pour mon site web.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 gradient-bg text-white px-8 py-3 rounded-xl font-semibold hover:opacity-90 transition-all"
@@ -447,7 +501,15 @@ export default function TarifsPage() {
                   Des questions? Personnalisez votre commande en discutant directement avec notre équipe.
                 </p>
                 <a
-                  href="https://wa.me/50932836938"
+                  href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`💬 *DEMANDE INFO TARIFS - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Tarifs - Section Paiement (gdigitalstudio.com/tarifs)
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! J'ai des questions sur vos tarifs et j'aimerais personnaliser ma commande.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-green-400 text-sm font-medium hover:underline"
@@ -471,7 +533,15 @@ export default function TarifsPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="https://wa.me/50932836938"
+                href={`https://wa.me/50932836938?text=${encodeURIComponent(
+`🚀 *JE VEUX DÉMARRER - G&D Digital Studio*
+━━━━━━━━━━━━━━━━━━━━━━
+
+📍 *Page:* Tarifs (gdigitalstudio.com/tarifs)
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Bonjour! J'ai vu vos tarifs et je suis prêt(e) à démarrer un projet avec vous. Contactez-moi!`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="gradient-bg text-white px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition-all inline-flex items-center gap-2 glow-primary"
