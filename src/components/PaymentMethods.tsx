@@ -4,11 +4,6 @@ import { useEffect, useRef, useState } from "react";
 
 const paymentMethods = [
   {
-    name: "MonCash",
-    logo: "/images/logos/moncash.png",
-    color: "bg-yellow-500",
-  },
-  {
     name: "Stripe",
     logo: "/images/logos/stripe.svg",
     color: "bg-[#635BFF]",
@@ -22,6 +17,11 @@ const paymentMethods = [
     name: "Mastercard",
     logo: "/images/logos/mastercard.svg",
     color: "bg-[#EB001B]",
+  },
+  {
+    name: "Apple Pay",
+    logo: "/images/logos/apple-pay.svg",
+    color: "bg-black",
   },
 ];
 
@@ -54,10 +54,10 @@ export default function PaymentMethods() {
         {/* Compact header */}
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-white mb-3">
-            Tous les <span className="gradient-text">paiements</span>
+            Paiements <span className="gradient-text">sécurisés</span>
           </h2>
           <p className="text-sm md:text-base text-gray-400 max-w-xl mx-auto">
-            MonCash, Stripe et paiements internationaux par carte
+            Stripe, Visa, Mastercard, Apple Pay et plus
           </p>
         </div>
 

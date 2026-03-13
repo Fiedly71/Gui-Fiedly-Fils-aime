@@ -202,9 +202,6 @@ export default function CommanderPage() {
     if (paymentMethod === "WhatsApp") {
       const message = generateWhatsAppMessage();
       window.open(`https://wa.me/50932836938?text=${message}`, "_blank");
-    } else if (paymentMethod === "MonCash") {
-      // Redirect to MonCash payment or show instructions
-      alert("Paiement MonCash: Envoyez le montant au 32 83 69 38 et nous vous contacterons après confirmation.");
     } else if (paymentMethod === "Carte Bancaire (Stripe)") {
       // Redirect to Stripe checkout
       alert("Paiement par carte: Nous vous enverrons un lien de paiement sécurisé par email.");
