@@ -45,8 +45,8 @@ export default function Footer() {
               <span className="font-bold text-sm text-white">Graphics & Development</span>
             </Link>
             <p className="text-gray-400 mb-6 max-w-sm">
-              Studio de développement web et d&apos;entrepreneuriat digital basé au Cap-Haïtien. 
-              Nous transformons vos idées en solutions digitales performantes.
+              Studio de développement web et d&apos;entrepreneuriat digital. 
+              Nous transformons vos idées en solutions digitales performantes, en Haïti et à l&apos;international.
             </p>
             
             {/* Social Links */}
@@ -125,7 +125,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} G&D Digital Studio. Basé au Cap-Haïtien, Haïti.
+            © {new Date().getFullYear()} G&D Digital Studio. Haïti 🌍 International
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             {footerLinks.legal.map((link, index) => (
