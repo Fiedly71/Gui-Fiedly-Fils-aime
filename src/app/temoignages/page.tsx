@@ -213,25 +213,15 @@ export default function TemoignagesPage() {
               Commencez votre projet avec nous et bénéficiez de notre expertise.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href={`https://wa.me/50932836938?text=${encodeURIComponent(
-`⭐ *DEMANDE DEPUIS TÉMOIGNAGES - G&D Digital Studio*
-━━━━━━━━━━━━━━━━━━━━━━
-
-📍 *Page:* Témoignages clients (gdigitalstudio.com/temoignages)
-
-━━━━━━━━━━━━━━━━━━━━━━
-
-Bonjour! J'ai lu les témoignages de vos clients et je suis convaincu(e). Je souhaite démarrer un projet avec vous.`)}`}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/commander"
                 className="inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white rounded-xl font-medium hover:scale-105 transition-transform glow-primary"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
                 </svg>
                 Démarrer un Projet
-              </a>
+              </Link>
               <Link
                 href="/solutions"
                 className="inline-flex items-center gap-2 px-6 py-3 glass text-white rounded-xl font-medium hover:scale-105 transition-transform"
