@@ -3,7 +3,8 @@ import {
   Hero, 
   TrustBadges, 
   Features, 
-  PaymentMethods, 
+  PaymentMethods,
+  DigitalEducation,
   TechStack, 
   Process,
   Guarantees,
@@ -26,6 +27,7 @@ export default function Home() {
         <Features />
         <Portfolio />
         <PaymentMethods />
+        <DigitalEducation />
         <TechStack />
         <Process />
         <Guarantees />

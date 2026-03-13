@@ -11,6 +11,7 @@ export { default as Contact } from "./Contact";
 export { default as Footer } from "./Footer";
 export { default as WhatsAppButton } from "./WhatsAppButton";
 export { default as PaymentMethods } from "./PaymentMethods";
+export { default as DigitalEducation } from "./DigitalEducation";
 export { default as TechStack } from "./TechStack";
 export { default as FAQ } from "./FAQ";
 export { default as Process } from "./Process";
